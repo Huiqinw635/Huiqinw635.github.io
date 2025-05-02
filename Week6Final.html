@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Recipe Finder</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+ 
+ <style>
     body {
       background-color: #f8f9fa;
     }
@@ -20,8 +21,22 @@
       max-width: 100%;
       border-radius: 0.5rem;
     }
+    #about {
+      background-color: #f8f9fa;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 2px solid #ccc;
+    }
+    #about h2 {
+      color: #333;
+    }
+    #about ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
   </style>
 </head>
+
 <body>
   <div class="container py-5">
     <h1 class="text-center mb-4">Smart Recipe Finder</h1>
@@ -72,5 +87,16 @@
         .then(displayRecipe);
     });
   </script>
+
+  <section id="about">
+    <h2>About This Page</h2>
+    <p>This app was created as a final project for class. It showcases JavaScript DOM manipulation, user interaction, and REST API usage.</p>
+    <ul>
+      <li>Built with HTML, CSS, and JavaScript</li>
+      <li>Uses TheMealDB API to display meals</li>
+      <li>Responsive design and interactive elements</li>
+    </ul>
+  </section>
+
 </body>
 </html>
